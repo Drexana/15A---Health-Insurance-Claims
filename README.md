@@ -27,11 +27,13 @@ Kaggle Datasets: https://www.kaggle.com/code/yash9439/health-insurance-claims-ed
 
 ## Technologies Used <!--- do not change this line -->
 
-- Python
-- pandas
-- K-means clustering
-- Random Forest
-- Isolation Forest
+-Python
+-kagglehub
+-pandas
+-scikit-learn
+-matplotlib
+-seaborn
+-Streamlit
   
 
 ## Authors <!--- do not change this line -->
