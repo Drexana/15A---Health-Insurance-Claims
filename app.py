@@ -45,6 +45,14 @@ st.subheader("Results for single claimant")
 st.write(f"**Cluster Assignment:** {cluster_id} ({cluster_name})")
 st.write(f"**Random Forest risk prediction:** {rf_prediction}")
 
+#Anomaly Detection
+if anomaly_flag is None:
+    st.warning("No Isolation Forest model found for this cluster.")
+elif anomaly_flag == -1:
+    st.error(f"Anomaly detected! (score: {anomaly_score:.3f})")
+else:
+    st.success(f"Normal data (score: {anomaly_score:.3f})")
+
 
 
 
