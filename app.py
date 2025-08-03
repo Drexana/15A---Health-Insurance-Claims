@@ -22,7 +22,7 @@ st.title("Insurance Risk Analysis Dashboard")
 st.markdown("Single Claimant Input")
 
 age = st.number_input("Age", min_value = 18, max_value = 100, value = 35)
-smoker = st.select("Smoker", ["Yes", "No"])
+smoker = st.selectbox("Smoker", ["Yes", "No"])
 bmi = st.number_input("BMI", min_value = 10.0, max_value = 60.0, value = 30.0)
 
 smoker_value = 1.0 if smoker == "Yes" else 0.0
