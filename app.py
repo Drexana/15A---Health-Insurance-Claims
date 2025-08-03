@@ -27,6 +27,26 @@ bmi = st.number_input("BMI", min_value = 10.0, max_value = 60.0, value = 12000.0
 
 smoker_value = 1.0 if smoker == "Yes" else 0.0
 
+input_df = pd.DataFrame([[age, smoker_value, charges, bmi]], columns = ["age", "smoker", "charges", "bmi"]_)
+scaled_input = scaler.transform(input_df)
+cluster_id = kmeans.predict(scaled_input)[0]
+cluster_name = cluster_labels.get(cluster_id, "Unknown")
+rf_prediction = rf_model.predict(input_df)[0]
+iso_model = iso_models.get(cluster_id)
+if iso_model:
+    anomaly_flag = iso_model.predict(input_df)[0]
+    anomaly_score = iso_model.decision_function(input_df)[0]
+else:
+    anomaly_flag = None
+
+st.subheader("Results for single claimant")
+
+st.write(f"**Cluster Assignment:** {cluster_id} ({cluster_name})")
+st.write(f"**Random Forest risk prediction:** {rf_prediction}")
+
+
+
+
 
 
 
