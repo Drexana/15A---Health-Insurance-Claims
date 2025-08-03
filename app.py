@@ -27,7 +27,7 @@ bmi = st.number_input("BMI", min_value = 10.0, max_value = 60.0, value = 12000.0
 
 smoker_value = 1.0 if smoker == "Yes" else 0.0
 
-input_df = pd.DataFrame([[age, smoker_value, charges, bmi]], columns = ["age", "smoker", "charges", "bmi"]_)
+input_df = pd.DataFrame([[age, smoker_value, charges, bmi]], columns = ["age", "smoker", "charges", "bmi"])
 scaled_input = scaler.transform(input_df)
 cluster_id = kmeans.predict(scaled_input)[0]
 cluster_name = cluster_labels.get(cluster_id, "Unknown")
