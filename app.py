@@ -41,8 +41,6 @@ else:
     anomaly_flag = None
 
 st.subheader("Results for single claimant")
-
-st.write(f"**Cluster Assignment:** {cluster_id} ({cluster_name})")
 st.write(f"**Random Forest risk prediction:** {rf_prediction}")
 
 #Anomaly Detection
