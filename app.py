@@ -56,8 +56,8 @@ if st.checkbox("Show Random Forest Feature Importance?"):
   features = input_df.columns.tolist()
   fig, ax = plt.subplots()
   sns.barplot(x=importances, y=features, palette="Blues_r", ax=ax)
-    ax.set_title("Random Forest Feature Importance")
-    st.pyplot(fig)
+  ax.set_title("Random Forest Feature Importance")
+  st.pyplot(fig)
 
 
 
