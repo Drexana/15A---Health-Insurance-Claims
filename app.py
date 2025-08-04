@@ -51,6 +51,15 @@ elif anomaly_flag == -1:
 else:
     st.success(f"Normal data (score: {anomaly_score:.3f})")
 
+if st.checkbox("Show Random Forest Feature Importance?"):
+  importances = rf_model.feature_importances_
+  features = input_df.columns.tolist()
+  fig, ax = plt.subplots()
+  sns.barplot(x=importances, y=features, palette="Blues_r", ax=ax)
+    ax.set_title("Random Forest Feature Importance")
+    st.pyplot(fig)
+
+
 
 
 
