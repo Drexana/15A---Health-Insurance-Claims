@@ -39,5 +39,5 @@ Kaggle Datasets: https://www.kaggle.com/code/yash9439/health-insurance-claims-ed
 ## Authors <!--- do not change this line -->
 
 This project was completed in collaboration with:
-- Sebastian Davalos ([sebas06lex@gmail.com](mailto:sebas06lex@gmail.com))
-- Drexana Rolle ([ drex.rolle909@gmail.com](mailto:drex.rolle909@gmail.com))
+- Sebastian Davalos ([sebas06lex@gmail.com](mailto:sebas06lex@gmail.com)) | [Github Page](https://github.com/chumboooo/Grp15A-HealthInsuranceClaims.github.io)    
+- Drexana Rolle ([ drex.rolle909@gmail.com](mailto:drex.rolle909@gmail.com)) | [Github Page](https://drexana.github.io/15A---Health/)     
